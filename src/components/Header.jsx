@@ -59,7 +59,7 @@ const Header = () => {
                         alt="userprofile" 
                         onClick={login}
                 />
-                <div className="w-40 bg-primary shadow-xl rounded-lg flex flex-col absolute">
+                <div className="w-40 bg-gray-50 shadow-xl rounded-lg flex flex-col absolute top-12 right-0 px-4 py-2">
                     <p>New Item</p>
                     <p>Logout</p>
                 </div>
