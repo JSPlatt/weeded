@@ -107,12 +107,7 @@ const Header = () => {
         
         {/* mobile */}
         <div className="flex items-center justify-between md:hidden w-full h-full">
-        <Link to='/'className="flex items-center gap-2">
-                <img src={Logo} 
-                className= "w-20 object-cover rounded-full" 
-                alt="logo"/>
-                <p className="text-headingColor text-xl font-bold">City</p>
-        </Link>
+        
 
         <div className="relative flex items-center justify center">
                 <MdShoppingBasket className="text-textColor text-2xl cursor-pointer"/>
@@ -120,6 +115,13 @@ const Header = () => {
                     <p className='text-xs text-white font-semibold'>2</p>
                     </div>
                 </div>
+
+                <Link to='/'className="flex items-center gap-2">
+                <img src={Logo} 
+                className= "w-20 object-cover rounded-full" 
+                alt="logo"/>
+                <p className="text-headingColor text-xl font-bold">City</p>
+        </Link>
 
             <div className="relative">
                     <motion.img 
