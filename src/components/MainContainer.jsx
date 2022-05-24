@@ -8,7 +8,7 @@ const MainContainer = () => {
       <div className='flex items-center gap-2 justify-center'>
         <p>Delivery</p>
         <div className='w-10 h-10 bg-white rounded-full overflow-hidden'>
-          <MdDeliveryDining className='w-full h-full object-contain'/>
+          <MdDeliveryDining className='w-full h-full object-contain' alt='delivery'/>
         </div>
       </div>
         
