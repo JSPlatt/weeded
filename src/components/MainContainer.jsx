@@ -12,12 +12,12 @@ const MainContainer = () => {
         </div>
       </div>
         
-        <p className='text-[2.5rem] front-bold tracking-wide text-headingColor'>
-          Trusted Cannabis Delivery in <span className="text-green-600 text-[3rem]">Your City</span>
+        <p className='text-[2.5rem] lg:text-[4.2rem] font-bold tracking-wide text-headingColor'>
+          Trusted Cannabis Delivery in <span className="text-green-600 text-[3rem] lg:text-[5rem]">Your City</span>
         </p>
 
-        <p className='text-base text-textColor text-center md:text-left'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <p className='text-base text-textColor text-center md:text-left md:w-[80%]'>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
         </p>
 
         <button type='button' className='bg-gradient-to-br from-green-600 to-green-500 rounded-lg w-full md:w-auto px-4 py-2 hover:shadow-lg transition-all ease-in-out duration-100'>
