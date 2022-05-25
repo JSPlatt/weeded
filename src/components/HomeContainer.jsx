@@ -1,5 +1,6 @@
 import React from 'react'
 import { MdDeliveryDining } from 'react-icons/md'
+import Hero from '../img/heroBg.png'
 
 const HomeContainer = () => {
   return (
@@ -24,7 +25,13 @@ const HomeContainer = () => {
           Order Now
         </button>
       </div>
-      <div className="py-2 bg-blue-200 flex-1"></div>
+      <div className="py-2 flex-1">
+          
+        {/* Change this with a different background at a later date */}
+       <img src={Hero} alt="Hero-Background" />
+        {/* Change this with a different background at a later date */}
+
+      </div>
     </section>
   )
 }
