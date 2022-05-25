@@ -2,6 +2,8 @@ import React from 'react'
 import { MdDeliveryDining } from 'react-icons/md'
 import Hero from '../img/heroBg.png'
 
+
+
 const HomeContainer = () => {
   return (
     <section className='grid grid-cols-1 md:grid-cols-2 gap-2 w-full' id='home'>
@@ -25,13 +27,15 @@ const HomeContainer = () => {
           Order Now
         </button>
       </div>
-      <div className="py-2 flex-1">
+      <div className="py-2 flex-1 flex items-center">
           
         {/* Change this with a different background at a later date */}
-       <img src={Hero} alt="Hero-Background" />
+       <img src={Hero} className='ml-auto h-400 w-full lg:w-auto lg:h-650' alt="Hero-Background" />
         {/* Change this with a different background at a later date */}
 
       </div>
+      <div className='w-full h-full absolute flex items-center justify-center'></div>
+    
     </section>
   )
 }
