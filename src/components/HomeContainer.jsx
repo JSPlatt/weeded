@@ -7,13 +7,13 @@ import Hero from '../img/heroBg.png'
 const HomeContainer = () => {
   return (
     <section className='grid grid-cols-1 md:grid-cols-2 gap-2 w-full' id='home'>
-      <div className="py-2 flex-1 flex flex-col items-start justify-center gap-6">
-      <div className='flex items-center gap-2 justify-center bg-green-100 px-4 py-1 rounded-full'>
-        <p className='text-base text-green-600 font-semibold'>Delivery</p>
-        <div className='8-6 h-8 bg-white rounded-full overflow-hidden drop-shadow-xl'>
-          <MdDeliveryDining className='w-full h-full object-contain' alt='delivery' />
+        <div className="py-2 flex-1 flex flex-col items-start justify-center gap-6">
+            <div className='flex items-center gap-2 justify-center bg-green-100 px-4 py-1 rounded-full'>
+                <p className='text-base text-green-600 font-semibold'>Delivery</p>
+                <div className='8-6 h-8 bg-white rounded-full overflow-hidden drop-shadow-xl'>
+                <MdDeliveryDining className='w-full h-full object-contain' alt='delivery' />
+            </div>
         </div>
-      </div>
         
         <p className='text-[2.5rem] lg:text-[4.2rem] font-bold tracking-wide text-headingColor'>
           Trusted Cannabis Delivery in <span className="text-green-600 text-[3rem] lg:text-[5rem]">Your City</span>
@@ -27,15 +27,16 @@ const HomeContainer = () => {
           Order Now
         </button>
       </div>
-      <div className="py-2 flex-1 flex items-center">
+      <div className="py-2 flex-1 flex items-center relative">
           
         {/* Change this with a different background at a later date */}
        <img src={Hero} className='ml-auto h-400 w-full lg:w-auto lg:h-650' alt="Hero-Background" />
         {/* Change this with a different background at a later date */}
 
-      </div>
-      <div className='w-full h-full absolute flex items-center justify-center'></div>
-    
+            <div className='w-full h-full absolute top-0 left-0 flex items-center justify-center px-32 py-4'>
+                <div className='w-190 p-2 bg-cardOverlay '></div>
+            </div>
+        </div>
     </section>
   )
 }
