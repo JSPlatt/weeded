@@ -2,11 +2,7 @@ import React from 'react'
 import { MdDeliveryDining } from 'react-icons/md'
 import Hero from '../img/heroBg.png'
 import Flower from '../img/flower.png'
-import Vaporizer from '../img/vaporizer.png'
-import Tincture from '../img/tincture.png'
-import Oral from '../img/oral.png'
-import Concentrate from '../img/concentrate.png'
-
+import { heroData } from '../utils/data'
 
 const HomeContainer = () => {
   return (
