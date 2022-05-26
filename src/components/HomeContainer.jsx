@@ -1,7 +1,11 @@
 import React from 'react'
 import { MdDeliveryDining } from 'react-icons/md'
 import Hero from '../img/heroBg.png'
-
+import Flower from '../img/flower.png'
+import Vaporizer from '../img/vaporizer.png'
+import Tincture from '../img/tincture.png'
+import Oral from '../img/oral.png'
+import Concentrate from '../img/concentrate.png'
 
 
 const HomeContainer = () => {
@@ -23,19 +27,34 @@ const HomeContainer = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
         </p>
 
-        <button type='button' className='bg-gradient-to-br from-green-600 to-green-500 rounded-lg w-full md:w-auto px-4 py-2 hover:shadow-lg transition-all ease-in-out duration-100'>
+        <button 
+            type='button' 
+            className='bg-gradient-to-br from-green-600 to-green-500 rounded-lg w-full md:w-auto px-4 py-2 hover:shadow-lg transition-all ease-in-out duration-100'
+        >
           Order Now
         </button>
       </div>
       <div className="py-2 flex-1 flex items-center relative">
-          
-        {/* Change this with a different background at a later date */}
-       <img src={Hero} className='ml-auto h-400 w-full lg:w-auto lg:h-650' alt="Hero-Background" />
-        {/* Change this with a different background at a later date */}
+       <img 
+        src={Hero} 
+        className='ml-auto h-420 w-full lg:w-auto lg:h-650' alt="Hero-Background" 
+        />
+       
+        <div className='w-full h-full absolute top-0 left-0 flex items-center justify-center px-32 py-4'>
+                <div className='w-190 p-4 bg-cardOverlay backdrop-blur-md rounded-3xl flex flex-col items-center justify-center'>
+                    <img src={Flower} 
+                        className="w-40 -mt-20"
+                        alt="cannabis flower"
+                     />
+                        <p className='text-xl font-semibold text-textColor mt-3'>
+                            Flower
+                        </p>
+                        <p className='text-xs text-lighttextGray font-semibold my-3 text-center'>
+                            Indica, Sativa & Hybrid
+                        </p>
 
-            <div className='w-full h-full absolute top-0 left-0 flex items-center justify-center px-32 py-4'>
-                <div className='w-190 p-2 bg-cardOverlay backdrop-blur-md  '>
-                    <img src="" alt="" />
+                        <p className='text-sm font-semibold text-headingColor'>
+                            <span className='text-xs text-red-600'>$</span>25.00 - 75.00</p>
                 </div>
             </div>
         </div>
