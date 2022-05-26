@@ -34,7 +34,9 @@ const HomeContainer = () => {
         {/* Change this with a different background at a later date */}
 
             <div className='w-full h-full absolute top-0 left-0 flex items-center justify-center px-32 py-4'>
-                <div className='w-190 p-2 bg-cardOverlay '></div>
+                <div className='w-190 p-2 bg-cardOverlay backdrop-blur-md  '>
+                    <img src="" alt="" />
+                </div>
             </div>
         </div>
     </section>
