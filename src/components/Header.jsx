@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Logo from '../img/logo.png'
 import Avatar from '../img/Avatar.png'
-import {MdShoppingBasket, MdAdd, MdLogout} from 'react-icons/md'
+import { MdShoppingBasket, MdAdd, MdLogout} from 'react-icons/md'
 import { motion } from 'framer-motion'
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { app } from '../firebase.config'
@@ -118,7 +118,7 @@ const Header = () => {
             <img src={Logo} 
             className= "w-20 object-cover rounded-full" 
             alt="logo"/>
-            <p className="text-headingColor text-xl font-bold">City</p>
+            <p className="text-headingColor text-xl font-bold">Locale</p>
         </Link>
 
             <div className="relative">
