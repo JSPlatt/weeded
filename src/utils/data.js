@@ -11,6 +11,7 @@ export const heroData = [
         decp: 'Indica, Sativa & Hybrid', 
         price : '40.00 - 90.00', 
         imageSrc : Flower,
+        alt : 'Cannabis Flowers',
     },
     {
         id: 2, 
@@ -18,6 +19,7 @@ export const heroData = [
         decp: 'Indica, Sativa & Hybrid', 
         price : '35.00 - 120.00', 
         imageSrc : Vaporizer,
+        alt : 'Cannabis Vaporizers',
     },
     {
         id: 3, 
@@ -25,6 +27,7 @@ export const heroData = [
         decp: 'Indica, Sativa & Hybrid', 
         price : '35.00 - 55.00', 
         imageSrc : Tincture,
+        alt : 'Cannabis Tinctures',
     },
     {
         id: 4, 
@@ -32,6 +35,7 @@ export const heroData = [
         decp: 'Indica, Sativa & Hybrid', 
         price : '35.00 - 70.00', 
         imageSrc : Oral,
+        alt : 'Cannabis Orals',
     },
     {
         id: 5, 
@@ -39,5 +43,6 @@ export const heroData = [
         decp: 'Indica, Sativa & Hybrid', 
         price : '35.00 - 65.00', 
         imageSrc : Concentrate,
+        alt : 'Cannabis Concentrates',
     },
 ]
