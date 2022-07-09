@@ -1,7 +1,6 @@
 import React from 'react'
 import { MdDeliveryDining } from 'react-icons/md'
 import Hero from '../img/heroBg.png'
-import Flower from '../img/flower.png'
 import { heroData } from '../utils/data'
 
 const HomeContainer = () => {
@@ -37,21 +36,22 @@ const HomeContainer = () => {
         />
        
         <div className='w-full h-full absolute top-0 left-0 flex items-center justify-center px-32 py-4'>
-                <div className='w-190 p-4 bg-cardOverlay backdrop-blur-md rounded-3xl flex flex-col items-center justify-center'>
-                    <img src={Flower} 
+            {heroData && heroData.map(n => (
+                <div key={n.id}className='w-190 p-4 bg-cardOverlay backdrop-blur-md rounded-3xl flex flex-col items-center justify-center'>
+                    <img src={n.imageSrc} 
                         className="w-40 -mt-20"
                         alt="cannabis flower"
                      />
                         <p className='text-xl font-semibold text-textColor mt-3'>
-                            Flower
+                            {n.name}
                         </p>
                         <p className='text-xs text-lighttextGray font-semibold my-3 text-center'>
-                            Indica, Sativa & Hybrid
+                            {n.decp}
                         </p>
 
                         <p className='text-sm font-semibold text-headingColor'>
                             <span className='text-xs text-red-600'>$</span>25.00 - 75.00</p>
-                </div>
+                </div>))}
             </div>
         </div>
     </section>
