@@ -21,6 +21,7 @@ const Header = () => {
         if (!user){
                 const {
                     user : {refreshToken, providerData}} = await signInWithPopup(firebaseAuth, provider)
+                    console.log(provider)
             dispatch({
                 type : actionType.SET_USER,
                 user : providerData[0],
@@ -73,11 +74,11 @@ const Header = () => {
 
                 <div className="relative">
                     <motion.img 
-                        whileTap={{scale: 0.6}}
-                        src={user ? user.photoURL : Avatar} 
+                        whileTap= {{scale: 0.6}}
+                        src= {user ? user.photoURL : Avatar} 
                         className='w-10 min-w-[40px] min-h-[40px] drop-shadow-xl rounded-full cursor-pointer'
-                        alt="userprofile" 
-                        onClick={login}
+                        alt= "User Profile" 
+                        onClick= {login}
                 />
                 {
                     isMenu && (
@@ -121,6 +122,7 @@ const Header = () => {
             <p className="text-headingColor text-xl font-bold">Locale</p>
         </Link>
 
+
             <div className="relative">
                     <motion.img 
                         whileTap={{scale: 0.6}}
@@ -145,10 +147,10 @@ const Header = () => {
                     )}
 
                         <ul className="flex flex-col">
-                            <li className ="text-base text-textColor hoever:text-headingColor duration-100 transition-all ease-in-out cursor-pointer hover:bg-slate-100 px-4 py-2">Home</li>
-                            <li className="text-base text-textColor hoever:text-headingColor duration-100 transition-all ease-in-out cursor-pointer hover:bg-slate-100 px-4 py-2"> Menu</li>
-                            <li className="text-base text-textColor hoever:text-headingColor duration-100 transition-all ease-in-out cursor-pointer hover:bg-slate-100 px-4 py-2"> About Us</li>
-                            <li className="text-base text-textColor hoever:text-headingColor duration-100 transition-all ease-in-out cursor-pointer hover:bg-slate-100 px-4 py-2"> Service</li>
+                            <li className ="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer hover:bg-slate-100 px-4 py-2">Home</li>
+                            <li className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer hover:bg-slate-100 px-4 py-2"> Menu</li>
+                            <li className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer hover:bg-slate-100 px-4 py-2"> About Us</li>
+                            <li className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer hover:bg-slate-100 px-4 py-2"> Service</li>
                         </ul>
 
                         <p className="m-2 p-2 rounded-md shadow-md flex items-center justify-center bg-gray-200 gap-3 cursor-pointer hover:bg-gray-300 transition-all duration-100 ease-in-out text-textColor text-base"
