@@ -141,7 +141,10 @@ const Header = () => {
                     {
                         user && user.email === "jsplatt@gmail.com" && (
                         <Link to={"/createitem"}>
-                            <p className="px-4 py-2 flex items-center gap-3 cursor-pointer hover:bg-slate-100 transition-all duration-100 ease-in-out text-textColor text-base">New Item <MdAdd />
+                            <p 
+                                className="px-4 py-2 flex items-center gap-3 cursor-pointer hover:bg-slate-100 transition-all duration-100 ease-in-out text-textColor text-base"
+                                onClick={() => setIsMenu(false)}
+                                >New Item <MdAdd />
                             </p>
                         </Link>
                     )}
